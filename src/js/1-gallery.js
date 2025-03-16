@@ -1,4 +1,5 @@
 import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
 
 const images = [
   {
@@ -83,14 +84,14 @@ const createGalleryMarkup = images => {
     .join('');
 };
 
-const gallery = document.querySelector(`.gallery`);
-gallery.innerHTML = createGalleryMarkup(images);
+document.querySelector(`.gallery`).innerHTML = createGalleryMarkup(images);
 
-let gallerySimple = new SimpleLightbox('.gallery a');
-gallerySimple.on('show.simplelightbox', function () {
-  // Do something…
+let gallery = new SimpleLightbox('.gallery a', {
+  showCounter: true,
+  animationSpeed: 250,
+  captionsData: 'alt',
 });
 
-gallerySimple.on('error.simplelightbox', function (e) {
+gallery.on('error.simplelightbox', function (e) {
   console.log(e); // Some usefull information
 });
