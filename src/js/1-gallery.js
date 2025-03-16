@@ -90,8 +90,9 @@ let gallery = new SimpleLightbox('.gallery a', {
   showCounter: true,
   animationSpeed: 250,
   captionsData: 'alt',
+  captionPosition: `outside`,
 });
 
-gallery.on('error.simplelightbox', function (e) {
-  console.log(e); // Some usefull information
+gallery.on('error.simplelightbox', function (error) {
+  console.log(error);
 });
