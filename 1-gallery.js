@@ -6,5 +6,5 @@ import"./assets/styles-B8eToLRY.js";import{S as t}from"./assets/vendor-g6-w1428.
                     alt="${i}"
                 />
             </a>
-        </li>`).join("");document.querySelector(".gallery").innerHTML=n(e);new t(".gallery a",{showCounter:!1,captionsData:"alt",captionPosition:"outside",captionDelay:250});
+        </li>`).join("");document.querySelector(".gallery").innerHTML=n(e);new t(".gallery a",{close:!1,showCounter:!1,captionsData:"alt",captionPosition:"outside",captionDelay:250});
 //# sourceMappingURL=1-gallery.js.map
