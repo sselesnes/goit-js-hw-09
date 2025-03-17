@@ -1,2 +1,2 @@
-import"./assets/styles-ihXV3GyG.js";const a=document.querySelector(".feedback-form");a.addEventListener("input",e=>{const t=e.target.value;e.target.name});a.addEventListener("submit",e=>{e.preventDefault()});
+import"./assets/modulepreload-polyfill-B5Qt9EMX.js";/* empty css                      */const t={email:"",message:""},a=document.querySelector(".feedback-form"),o="feedback-form-state";a.addEventListener("input",e=>{t[e.target.name]=e.target.value,localStorage.setItem(o,JSON.stringify(t))});a.addEventListener("submit",e=>{e.preventDefault(),console.log(localStorage.getItem(o))});
 //# sourceMappingURL=2-form.js.map
