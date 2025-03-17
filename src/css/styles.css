@@ -45,3 +45,40 @@ ul {
   object-fit: cover;
   transition: transform 250ms ease-in;
 }
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+input,
+textarea {
+  display: flex;
+  align-items: center;
+  max-width: 360px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  padding: 8px 16px;
+  margin-top: 8px;
+}
+button {
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background: #4e75ff;
+  color: #fff;
+  padding: 8px 16px;
+  max-width: 120px;
+}
+
+/* input,
+input::placeholder {
+  color: #2e2f42;
+}
+input:hover {
+  border: 1px solid #000;
+}
+input:focus-visible {
+  border: 1px solid #808080;
+  outline: none;
+} */
