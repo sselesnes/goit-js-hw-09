@@ -11,5 +11,23 @@ formFeedback.addEventListener('input', event => {
 
 formFeedback.addEventListener('submit', event => {
   event.preventDefault();
-  console.log(localStorage.getItem(localStorageKey));
+  for (const key of Object.keys(formData)) {
+    if (!event.target[key].value) {
+      alert(`Fill please all fields`);
+      return;
+    }
+  }
+  console.log(formData);
+  formFeedback.reset();
+  localStorage.removeItem(localStorageKey);
+});
+
+window.addEventListener('load', () => {
+  const formDataSaved = JSON.parse(localStorage.getItem(localStorageKey));
+  if (formDataSaved) {
+    Object.entries(formDataSaved).forEach(([key, value]) => {
+      formFeedback[key].value = value;
+      formData[key] = value;
+    });
+  }
 });
