@@ -88,9 +88,6 @@ const createGalleryMarkup = images => {
 document.querySelector(`.gallery`).innerHTML = createGalleryMarkup(images);
 
 let gallery = new SimpleLightbox('.gallery a', {
-  close: false,
-  showCounter: false,
   captionsData: 'alt',
-  captionPosition: `outside`,
   captionDelay: 250,
 });
