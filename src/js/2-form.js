@@ -1,5 +1,3 @@
-import '../css/styles.css';
-
 const formData = { email: '', message: '' };
 const formFeedback = document.querySelector('.feedback-form');
 const localStorageKey = 'feedback-form-state';

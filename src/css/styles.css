@@ -7,14 +7,20 @@ body {
   margin: 24px;
   background-color: #fff;
 }
-body,
-button,
-input,
-textarea {
+body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.04em;
+}
+button,
+input,
+textarea {
+  font: inherit;
+}
+button,
+label {
+  cursor: pointer;
 }
 h1,
 h2,
